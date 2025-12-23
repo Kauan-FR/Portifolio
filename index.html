@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kauan Santos Ferreira - Desenvolvedor Back-end especializado em Java, Spring Boot e Angular">
+    <meta name="keywords" content="desenvolvedor, fullstack, backend, java, spring boot, angular, postgresql">
+    <meta name="author" content="Kauan Santos Ferreira">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Kauan Santos Ferreira | Desenvolvedor Back-end">
+    <meta property="og:description" content="Desenvolvedor Back-end especializado em Java, Spring Boot, PostgreSQL e Angular">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kauanferreira.com.br">
+    
+    <title>Kauan Santos Ferreira | Desenvolvedor Back-end</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Devicon para ícones de tecnologias -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor customizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header / Navegação -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-bracket">&lt;</span>KF<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active">Início</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contato</a>
+                </li>
+            </ul>
+
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Apresentação -->
+        <section class="hero" id="home">
+            <div class="hero__background">
+                <div class="hero__grid"></div>
+            </div>
+            
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <p class="hero__greeting">
+                        <span class="typing-text">Olá, eu sou</span>
+                    </p>
+                    <h1 class="hero__name">
+                        Kauan<br>
+                        <span class="text-gradient">Ferreira</span>
+                    </h1>
+                    <h2 class="hero__title">
+                        <span class="code-symbol">&lt;</span>
+                        Desenvolvedor Backend
+                        <span class="code-symbol">/&gt;</span>
+                    </h2>
+                    <p class="hero__description">
+                        Transformando ideias em aplicações escaláveis e de alta qualidade 
+                        com <strong>Java</strong>, <strong>Spring Boot</strong> e <strong>PostgresSQL</strong>.
+                    </p>
+                    
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">
+                            <span>Ver Projetos</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                            <span>Entrar em Contato</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="code-window">
+                        <div class="code-window__header">
+                            <div class="code-window__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-window__title">Developer.java</span>
+                        </div>
+                        <div class="code-window__content">
+                            <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {
+
+    <span class="code-keyword">private</span> String name = <span class="code-string">"Kauan"</span>;
+    <span class="code-keyword">private</span> String role = <span class="code-string">"Backend"</span>;
+    <span class="code-keyword">private</span> String[] skills = {
+        <span class="code-string">"Java"</span>, <span class="code-string">"Spring Boot"</span>,
+        <span class="code-string">"JavaScript"</span>, <span class="code-string">"PostgreSQL"</span>
+    };
+
+    <span class="code-keyword">public</span> String <span class="code-method">getStatus</span>() {
+        <span class="code-keyword">return</span> <span class="code-string">"Pronto para novos desafios!"</span>;
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__bottom">
+                <a href="#about" class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-indicator__line"></div>
+                </a>
+                
+                <!-- Tech Carousel -->
+                <div class="tech-carousel">
+                    <div class="tech-carousel__track">
+                        <!-- Primeira sequência -->
+                        <div class="tech-carousel__item"><i class="devicon-kotlin-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-gradle-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-spring-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-intellij-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-github-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-figma-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-notion-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-tailwindcss-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-html5-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-css3-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-javascript-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-typescript-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-react-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-redux-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-nodejs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-nextjs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-java-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-postgresql-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-mongodb-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-docker-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-git-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-angular-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-vuejs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-python-plain"></i></div>
+                        <!-- Duplicado para loop infinito -->
+                        <div class="tech-carousel__item"><i class="devicon-kotlin-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-gradle-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-spring-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-intellij-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-github-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-figma-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-notion-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-tailwindcss-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-html5-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-css3-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-javascript-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-typescript-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-react-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-redux-original"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-nodejs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-nextjs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-java-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-postgresql-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-mongodb-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-docker-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-git-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-angular-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-vuejs-plain"></i></div>
+                        <div class="tech-carousel__item"><i class="devicon-python-plain"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// Sobre mim</span>
+                    <h2 class="section-title">Quem sou eu<span class="text-gradient">?</span></h2>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__intro">
+                            Desenvolvedor Backend em formação, com foco em <strong>Java, Spring Boot e PostgreSQL.</strong>
+                            Técnico em Informática pelo <strong>Instituto Federal de Sergipe</strong> e graduando em <strong>Análise e Desenvolvimento de Sistemas pela Estácio.</strong>
+                            Atuo no desenvolvimento de aplicações <strong>robustas, escaláveis e bem estruturadas,</strong> sempre aplicando boas práticas e buscando evolução contínua.
+                        </p>
+                        
+                        <!-- Botão Download CV -->
+                        <a href="curriculo-kauan-ferreira.pdf" download class="btn-download-cv">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            <span>Baixar Currículo</span>
+                        </a>
+                    </div>
+                    
+                    <div class="about__info">
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div class="info-card__content">
+                                <span class="info-card__label">Nome</span>
+                                <span class="info-card__value">Kauan Santos Ferreira</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="info-card__content">
+                                <span class="info-card__label">Localização</span>
+                                <span class="info-card__value">Aracaju, SE - Brasil</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="info-card__content">
+                                <span class="info-card__label">Disponibilidade</span>
+                                <span class="info-card__value available">Disponível para oportunidades</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// Minhas habilidades</span>
+                    <h2 class="section-title">Tecnologias<span class="text-gradient">.</span></h2>
+                </div>
+                
+                <div class="skills__grid">
+
+                    <!-- Backend -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">
+                            <span class="skill-category__icon"></span>
+                            Back-end
+                        </h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item" data-skill="Java">
+                                <i class="devicon-java-plain colored"></i>
+                                <span>Java 11+</span>
+                            </div>
+                            <div class="skill-item" data-skill="Spring">
+                                <i class="devicon-spring-original colored"></i>
+                                <span>Spring Boot</span>
+                            </div>
+                            <div class="skill-item" data-skill="REST API">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                                <span>REST API</span>
+                            </div>
+                            <div class="skill-item" data-skill="JWT">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                                </svg>
+                                <span>JWT</span>
+                            </div>
+                            <div class="skill-item" data-skill="Swagger">
+                                <i class="devicon-swagger-plain colored"></i>
+                                <span>Swagger</span>
+                            </div>
+                            <div class="skill-item" data-skill="Postman">
+                                <i class="devicon-postman-plain colored"></i>
+                                <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">
+                            <span class="skill-category__icon"></span>
+                            Front-end
+                        </h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item" data-skill="JavaScript">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" data-skill="HTML5">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item" data-skill="CSS3">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Banco de Dados -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">
+                            <span class="skill-category__icon"></span>
+                            Banco de Dados
+                        </h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item" data-skill="PostgreSQL">
+                                <i class="devicon-postgresql-plain colored"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ferramentas & DevOps -->
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">
+                            <span class="skill-category__icon"></span>
+                            Ferramentas & DevOps
+                        </h3>
+                        <div class="skill-category__items">
+                            <div class="skill-item" data-skill="Git">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item" data-skill="GitHub">
+                                <i class="devicon-github-original"></i>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// Meu trabalho</span>
+                    <h2 class="section-title">Projetos<span class="text-gradient">.</span></h2>
+                </div>
+                
+                <div class="projects__grid">
+                    <!-- Projeto 1 - La Bodega Mineira -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <span class="project-card__icon">🍱</span>
+                            </div>
+                            <div class="project-card__overlay">
+                                <a href="#" class="project-card__link" title="Ver no GitHub">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="#" class="project-card__link" title="Ver Demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__year">2025</span>
+                            <h3 class="project-card__title">La Bodega Mineira</h3>
+                            <p class="project-card__description">
+                                Plataforma web para montagem de marmitas e pedidos online. 
+                                Sistema completo com cardápio dinâmico e gestão de pedidos.
+                            </p>
+                            <div class="project-card__tech">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto 2 - Balada Fictícia -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <span class="project-card__icon">🎫</span>
+                            </div>
+                            <div class="project-card__overlay">
+                                <a href="#" class="project-card__link" title="Ver no GitHub">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                                <a href="#" class="project-card__link" title="Ver Demo">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__year">2025</span>
+                            <h3 class="project-card__title">Balada Fictícia</h3>
+                            <p class="project-card__description">
+                                Sistema para venda e controle de ingressos de eventos. 
+                                Gerenciamento completo de vendas e check-in.
+                            </p>
+                            <div class="project-card__tech">
+                                <span>HTML/CSS/JS</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Projeto Placeholder - Em breve -->
+                    <article class="project-card project-card--coming-soon">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <span class="project-card__icon">🚀</span>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <span class="project-card__year">Em breve</span>
+                            <h3 class="project-card__title">Novo Projeto</h3>
+                            <p class="project-card__description">
+                                Estou sempre trabalhando em novos projetos. 
+                                Fique ligado para mais novidades!
+                            </p>
+                            <div class="project-card__tech">
+                                <span>???</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="projects__cta">
+                    <a href="https://github.com/Kauan-FR" target="_blank" class="btn btn--outline">
+                        <i class="devicon-github-original"></i>
+                        <span>Ver mais no GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="section-tag">// Vamos conversar</span>
+                    <h2 class="section-title">Entre em<span class="text-gradient"> Contato</span></h2>
+                    <p class="section-subtitle">
+                        Estou disponível para novas oportunidades. Vamos construir algo incrível juntos?
+                    </p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <a href="mailto:kauanferreira3011@gmail.com" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__content">
+                                <span class="contact-card__label">Email</span>
+                                <span class="contact-card__value">kauanferreira3011@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/kauan-santos-ferreira" target="_blank" class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="devicon-linkedin-plain"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <span class="contact-card__label">LinkedIn</span>
+                                <span class="contact-card__value">Acessar o Linkedin</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/Kauan-FR" target="_blank" class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="devicon-github-original"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <span class="contact-card__label">GitHub</span>
+                                <span class="contact-card__value">Acessar o GitHub</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/5579991360275" target="_blank" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__content">
+                                <span class="contact-card__label">WhatsApp</span>
+                                <span class="contact-card__value">(79) 99136-0275</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    <span class="code-symbol">&lt;</span>
+                    Desenvolvido por <strong>Kauan Ferreira</strong>
+                    <span class="code-symbol">/&gt;</span>
+                </p>
+                <p class="footer__copyright">© 2025 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
