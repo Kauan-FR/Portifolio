@@ -9,7 +9,7 @@
 
 **Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experiência como Desenvolvedor Backend.**
 
-[🔗 Ver Online](https://kauanferreira.com.br) • [📧 Contato](mailto:kauanferreira3011@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/kauan-santos-ferreira)
+[🔗 Visite o Portfólio](https://portifolio-kappa-rose.vercel.app/) • [📧 Contato](mailto:kauanferreira3011@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/kauan-santos-ferreira)
 
 </div>
 
@@ -18,7 +18,7 @@
 ## 📸 Preview
 
 <div align="center">
-  <img src="./preview.png" alt="Preview do Portfólio" width="800">
+  <img src="previewPortfolio.png" alt="Preview do Portfólio" width="800">
 </div>
 
 ---
@@ -107,6 +107,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 <div align="center">
 
-**Desenvolvido com 💚 por [Kauan Ferreira](https://github.com/Kauan-FR)**
+**Desenvolvido por [Kauan Ferreira](https://github.com/Kauan-FR)**
 
 </div>
