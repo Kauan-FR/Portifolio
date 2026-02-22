@@ -128,8 +128,21 @@ body {
 @keyframes scrollLine { 0%, 100% { transform: scaleY(1); opacity: 1; } 50% { transform: scaleY(0.5); opacity: 0.5; } }
 
 /* TECH CAROUSEL */
-.tech-carousel { width: 100%; padding: 20px 0; overflow: hidden; background: rgba(10, 10, 11, 0.9); border-top: 1px solid var(--border-color); }
-.tech-carousel__track { display: flex; gap: 50px; animation: carouselScroll 35s linear infinite; width: max-content; }
+.tech-carousel { 
+    width: 100%; 
+    padding: 20px 0; 
+    overflow: hidden; 
+    background: rgba(10, 10, 11, 0.9); 
+    border-top: 1px solid var(--border-color); 
+}
+
+.tech-carousel__track { 
+    display: flex;
+    gap: 50px;
+    animation: carouselScroll 20s linear infinite;
+    width: max-content; 
+}
+
 .tech-carousel__item { display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .tech-carousel__item i { font-size: 1.6rem; color: rgba(255, 255, 255, 0.5); transition: all var(--transition-base); filter: grayscale(100%) brightness(2); }
 .tech-carousel__item:hover i { color: rgba(255, 255, 255, 0.9); transform: scale(1.2); }
@@ -261,3 +274,36 @@ section { padding: var(--section-padding); }
 .code-window { animation: fadeInUp 0.8s ease 0.6s forwards; opacity: 0; }
 .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* AVAILABILITY BADGE */
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid var(--accent-primary);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    margin-bottom: 20px;
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+.availability-badge__dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes pulse-badge {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+}

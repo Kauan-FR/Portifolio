@@ -269,3 +269,6 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// Dynamic years footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
